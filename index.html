@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>tok-sim · Tokens/Second Simulator</title>
-<link rel="canonical" href="https://jvr0x.com/tok-sim/">
+<link rel="canonical" href="https://javierbits.com/tok-sim/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="jvr0x">
+<meta property="og:site_name" content="javierbits">
 <meta property="og:title" content="tok-sim · Tokens/Second Simulator">
 <meta property="og:description" content="What does X tokens/sec actually look like? Pick a text style, set a token rate and watch characters stream out at that speed, or compare two rates side by side. Runs in the browser, no inference.">
-<meta property="og:url" content="https://jvr0x.com/tok-sim/">
-<meta property="og:image" content="https://jvr0x.com/assets/og-default.png">
+<meta property="og:url" content="https://javierbits.com/tok-sim/">
+<meta property="og:image" content="https://javierbits.com/assets/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@jvr0x">
-<meta name="twitter:creator" content="@jvr0x">
+<meta name="twitter:site" content="@javierbits">
+<meta name="twitter:creator" content="@javierbits">
 <meta name="twitter:title" content="tok-sim · Tokens/Second Simulator">
 <meta name="twitter:description" content="What does X tokens/sec actually look like? Pick a text style, set a token rate and watch characters stream out at that speed, or compare two rates side by side. Runs in the browser, no inference.">
-<meta name="twitter:image" content="https://jvr0x.com/assets/og-default.png">
+<meta name="twitter:image" content="https://javierbits.com/assets/og-default.png">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,7 +160,7 @@ h1 .accent{color:var(--green)}
 <body>
 <!-- jx:header -->
 <header class="jx-header">
-  <a class="jx-logo" href="/">jvr0x<span class="jx-blink">_</span></a>
+  <a class="jx-logo" href="/">javierbits<span class="jx-blink">_</span></a>
   <nav class="jx-nav" aria-label="Site">
     <a href="/">home</a>
     <a href="/about/">about</a>
@@ -277,20 +277,20 @@ h1 .accent{color:var(--green)}
   <!-- footer -->
   <footer>
     <div>tok-sim — Tokens/Second Visual Simulator. No real inference, just character approximation per style.</div>
-    <div>Source: <a href="https://github.com/jvr0x/tok-sim" target="_blank" rel="noopener">github.com/jvr0x/tok-sim</a></div>
-    <div>Related: <a href="https://jvr0x.com/dgx-spark-bench/" target="_blank" rel="noopener">dgx-spark-bench</a> — real measured tokens/sec numbers on an NVIDIA DGX Spark, if you want to see what these rates look like on actual hardware.</div>
+    <div>Source: <a href="https://github.com/javierbits/tok-sim" target="_blank" rel="noopener">github.com/javierbits/tok-sim</a></div>
+    <div>Related: <a href="https://javierbits.com/dgx-spark-bench/" target="_blank" rel="noopener">dgx-spark-bench</a> — real measured tokens/sec numbers on an NVIDIA DGX Spark, if you want to see what these rates look like on actual hardware.</div>
   </footer>
 </div>
 
 <!-- jx:footer -->
 <footer class="jx-footer">
   <div class="jx-footer-links">
-    <a href="https://x.com/jvr0x" rel="noopener">@jvr0x on&nbsp;X</a>
-    <a href="https://github.com/jvr0x" rel="noopener">github</a>
-    <a href="https://huggingface.co/jvr0x" rel="noopener">huggingface</a>
+    <a href="https://x.com/javierbits" rel="noopener">@javierbits on&nbsp;X</a>
+    <a href="https://github.com/javierbits" rel="noopener">github</a>
+    <a href="https://huggingface.co/javierbits" rel="noopener">huggingface</a>
     <a href="https://agicheckpoint.com" rel="noopener">agicheckpoint.com</a>
     <a href="https://calendly.com/javierbits" rel="noopener">book a consultation</a>
-    <a href="https://ko-fi.com/jvr0x" rel="noopener">support me</a>
+    <a href="https://ko-fi.com/javierbits" rel="noopener">support me</a>
   </div>
   <p class="jx-sig">Javier &bull; priv/acc | Local AI, security, privacy &amp; crypto</p>
 </footer>
@@ -337,7 +337,7 @@ const CORPORA = {
     "# API Reference\n\n## Endpoints\n\n### `GET /api/v1/resources`\n\nReturns a paginated list of resources.\n\n**Query Parameters:**\n\n- `page` (integer) — Page number (default: 1)\n- `limit` (integer) — Items per page (default: 20, max: 100)\n- `sort` (string) — Sort field (default: `created_at`)\n\n**Response:**\n\n```json\n{\n  \"data\": [...],\n  \"meta\": {\n    \"page\": 1,\n    \"total_pages\": 5,\n    \"total_items\": 97\n  }\n}\n```\n\n### `POST /api/v1/resources`\n\nCreates a new resource. Requires `Authorization: Bearer <token>`.\n\n> **Note:** The request body must include `name` and `type` fields.\n\n## Authentication\n\nAll endpoints require a JWT bearer token in the `Authorization` header.",
   ],
   json: [
-    '{\n  "project": "tok-sim",\n  "version": "1.0.0",\n  "description": "Tokens per second visual simulator",\n  "repository": "https://github.com/jvr0x/tok-sim",\n  "license": "MIT",\n  "config": {\n    "defaultRate": 20,\n    "maxRate": 500,\n    "styles": ["prose", "code", "math", "markdown", "json", "shell"],\n    "theme": {\n      "background": "#0a0e14",\n      "foreground": "#c5cdd8",\n      "accent": "#00ff41"\n    }\n  },\n  "dependencies": {\n    "runtime": "browser",\n    "external": []\n  },\n  "features": {\n    "singleWindow": true,\n    "dualWindow": true,\n    "stylePicker": true,\n    "rateControl": true,\n    "targetLength": true\n  }\n}',
+    '{\n  "project": "tok-sim",\n  "version": "1.0.0",\n  "description": "Tokens per second visual simulator",\n  "repository": "https://github.com/javierbits/tok-sim",\n  "license": "MIT",\n  "config": {\n    "defaultRate": 20,\n    "maxRate": 500,\n    "styles": ["prose", "code", "math", "markdown", "json", "shell"],\n    "theme": {\n      "background": "#0a0e14",\n      "foreground": "#c5cdd8",\n      "accent": "#00ff41"\n    }\n  },\n  "dependencies": {\n    "runtime": "browser",\n    "external": []\n  },\n  "features": {\n    "singleWindow": true,\n    "dualWindow": true,\n    "stylePicker": true,\n    "rateControl": true,\n    "targetLength": true\n  }\n}',
     '{\n  "session": {\n    "id": "sess_a1b2c3d4",\n    "created_at": "2026-07-17T10:30:00Z",\n    "status": "active",\n    "metadata": {\n      "user_agent": "Mozilla/5.0",\n      "ip_address": "192.168.1.1",\n      "region": "eu-west-1"\n    }\n  },\n  "metrics": {\n    "total_requests": 15847,\n    "avg_latency_ms": 42.3,\n    "p99_latency_ms": 187.5,\n    "error_rate": 0.0023,\n    "throughput": {\n      "requests_per_second": 340,\n      "bytes_per_second": 1048576\n    }\n  },\n  "endpoints": [\n    {\n      "path": "/api/v1/generate",\n      "method": "POST",\n      "hits": 8923,\n      "avg_time_ms": 55.2\n    },\n    {\n      "path": "/api/v1/status",\n      "method": "GET",\n      "hits": 6924,\n      "avg_time_ms": 3.1\n    }\n  ]\n}',
     '{\n  "models": [\n    {\n      "name": "llama-3.1-8b",\n      "quantization": "NVFP4",\n      "parameters": 8000000000,\n      "context_length": 131072,\n      "benchmarks": {\n        "tokens_per_second": 36.4,\n        "ttft_p50_ms": 120,\n        "ttft_p95_ms": 210,\n        "max_concurrency": 128\n      }\n    },\n    {\n      "name": "qwen3.6-35b",\n      "quantization": "NVFP4",\n      "parameters": 35000000000,\n      "context_length": 131072,\n      "benchmarks": {\n        "tokens_per_second": 8.7,\n        "ttft_p50_ms": 280,\n        "ttft_p95_ms": 520,\n        "max_concurrency": 32\n      }\n    }\n  ]\n}',
   ],

@@ -9,7 +9,7 @@ A visual simulator that shows what **X tokens/sec** actually looks like when gen
 - **Configurable output length** — Choose how many tokens to generate (10–5000).
 - **1 or 2 generation windows** — Toggle between single-window and side-by-side dual-window mode. In dual mode, each window has its own independent style, rate, and length settings.
 - **Live stats** — Real-time token count, elapsed time, and estimated remaining time.
-- **Terminal aesthetic** — Dark theme with scanline overlay, JetBrains Mono font, and green accent colors matching the [DGX Spark Bench](https://jvr0x.com/dgx-spark-bench/).
+- **Terminal aesthetic** — Dark theme with scanline overlay, JetBrains Mono font, and green accent colors matching the [DGX Spark Bench](https://javierbits.com/dgx-spark-bench/).
 
 ## Usage
 
@@ -36,6 +36,6 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ## Links
 
-- [Source code](https://github.com/jvr0x/tok-sim)
-- [jvr0x.com](https://jvr0x.com)
-- [DGX Spark LLM Bench](https://jvr0x.com/dgx-spark-bench/)
+- [Source code](https://github.com/javierbits/tok-sim)
+- [javierbits.com](https://javierbits.com)
+- [DGX Spark LLM Bench](https://javierbits.com/dgx-spark-bench/)
